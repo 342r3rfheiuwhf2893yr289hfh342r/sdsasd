@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Крипта</title>
+</head>
+<body>
+    <div class="background-container">
+      <div class="content-container">
+        <header class="header">
+          <div class="logo">Всё про крипту</div>
+          <nav class="nav">
+            <ul>
+              <li><a href="C:\Users\Али\Desktop\Новая папка (2)\второй сайт\drugoy_sayt.html" target="_blank">Что такое криптовалюта?</a></li>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Услуги</a></li>
+            </ul>
+          </nav>
+          <div class="contact">
+            <i class="fas fa-phone"></i><span class="phone">+7 (982) 226-07-33</span>
+          </div>
+          <div class="buttons">
+            <button class="glow-button call-button">Звонить</button>
+            <button class="glow-button telegram-button">Написать в Telegram</button>
+          </div>
+        </header>
+
+        <main>
+          <!-- Основное содержимое страницы -->
+          <p class="osnova"></p>
+        </main>
+      </div>
+    </div>
+
+  <script>
+    const callButton = document.querySelector('.call-button');
+    const telegramButton = document.querySelector('.telegram-button');
+    const header = document.querySelector('.header');
+
+    callButton.addEventListener('click', () => {
+      window.location.href = "tel:+79822260733";
+    });
+
+    telegramButton.addEventListener('click', () => {
+      window.location.href = "https://t.me/+2lkZDZ6y0vhkMGZi";
+    });
+
+    window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.querySelector('.content-container').classList.add('show');
+  }, 500); 
+});
+
+  </script>
+ 
+  
+</body>
+</html>
